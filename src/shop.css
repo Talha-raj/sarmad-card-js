@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 2rem 5rem;
+}
+i{
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.cart{
+    font-size: 2rem;
+    background: white;
+    color: black;
+    border-radius: 5px;
+    position: relative;
+}
+.cart-amount{
+    background: red;
+    color: white;
+    font-size: 1rem;
+    position: absolute;
+    top: -15px;
+    right: -5px;
+    border-radius: 5px;
+    padding: 3px;
+
+}
+.shop{
+    display: grid;
+    grid-template-columns: repeat(4,225px);
+    margin-top: 15px;
+    justify-content: center;
+    gap: 10px;
+}
+
+@media  (max-width: 1000px){
+    .shop{
+        grid-template-columns: repeat(2,225px);
+    }
+}
+@media  (max-width: 500px){
+    .shop{
+        grid-template-columns: repeat(1,225px);
+    }
+}
+
+.item{
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    padding: 10px
+}
+.price-quantity{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.buttons{
+    display: flex;
+    gap: 10px;
+}
+
+.text-center{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.homebtn,.checkout,.removeall{
+    background: black;
+    color: white;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.checkout{
+    background-color: green;
+
+}
+.removeall{
+    background-color: red;
+}
+
+.bi-x-lg{
+    color: red;
+    font-weight: bold;
+}
+
+
+/* shopping cart rules for styling */
+
+.shopping-cart{
+    display: grid;
+    grid-template-columns: repeat(1, 324px);
+    justify-content: center;
+    gap: 10px;
+}
+/* cart-item styles */
+.cart-item{
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+}
+.title-price-x{
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    align-items: center;
+}
+.title-price{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.cart-item-price{
+    background: black;
+    color: white;
+    padding: 3px 5px;
+}
